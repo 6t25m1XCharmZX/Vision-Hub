@@ -1,0 +1,236 @@
+local ArrayField = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/ArrayField/main/Source.lua'))()
+
+
+ 
+ 
+local MainWindow = ArrayField:CreateWindow({
+    Name = "Vision Hub ",
+    LoadingTitle = "Loading...",
+    LoadingSubtitle = "idk what to type here",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Nova Hub"
+    },
+    Discord = {
+       Enabled = false,
+       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "McDonalds Hub",
+       Subtitle = "Key System",
+       Note = "Key: McDonalds",
+       FileName = "SiriusKey",
+       SaveKey = true,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "McDonalds"
+    }
+ })
+ 
+ 
+ local MainTab = MainWindow:CreateTab("Hubs, Scripts", 4483362458) -- Title, Image
+
+ 
+ local Button = MainTab:CreateButton({
+    Name = "Infinite Yield",
+    Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() 
+    end,
+ })
+ 
+ 
+ local Button = MainTab:CreateButton({
+    Name = "Ghost Hub",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+    end,
+ })
+
+
+
+ local Button = MainTab:CreateButton({
+    Name = "Dark Dex Explorer",
+    Callback = function()
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+    end,
+ })
+
+
+
+ local Button = MainTab:CreateButton({
+    Name = "Nameless Admin",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+        
+    end,
+ })
+
+
+
+ local Button = MainTab:CreateButton({
+    Name = "Faith's Chat Bypasser",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Suno0526/Faith/main/module.lua', true))()
+        
+    end,
+ })
+
+
+
+
+
+
+ local Button = MainTab:CreateButton({
+    Name = "BidoSkins Hub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BidoSkinsYT/BidoSkinsYT/main/Bido%20SkinsV1.2"))()
+        
+    end,
+ })
+
+
+
+
+
+ local Button = MainTab:CreateButton({
+    Name = "MrPectable Hub",
+    Callback = function()
+      loadstring(game:HttpGet(('https://raw.githubusercontent.com/MrPectable/MrPectableSource/main/v1.lua')))() 
+        
+    end,
+ })
+
+
+
+
+
+ local Button = MainTab:CreateButton({
+   Name = "Wheat Hub Universal (get key at this link https://1.kelprepl.repl.co/getkey/WheatHub)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/MaGiXxScripter0/wheathub/main/universal.lua"))()
+       
+   end,
+})
+
+
+
+
+ local Button = MainTab:CreateButton({
+   Name = "Strongest Battlegrounds Hub",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/saitama"))()
+       
+   end,
+})
+
+
+
+local Button = MainTab:CreateButton({
+   Name = "DaHood Hub",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Levoucher/LevouchiaX/master/LevouchiaXProject'))()
+       
+   end,
+})
+
+
+
+
+local Button = MainTab:CreateButton({
+   Name = "Fling Gui",
+   Callback = function()
+ loadstring(game:HttpGet("https://pastebin.com/raw/saMtiek2",true))()
+       
+   end,
+})
+
+
+
+local Button = MainTab:CreateButton({
+   Name = "Annoy Gui",
+   Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1cHdCvTF"))()
+       
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Sirius",
+   Callback = function()
+loadstring(game:HttpGet('https://sirius.menu/sirius'))()
+       
+   end,
+})
+
+
+ local Toggle = MainTab:CreateToggle({
+    Name = "Infinite Jump",
+    CurrentValue = false,
+    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(InfiniteJumpEnabled)
+        local InfiniteJumpEnabled = true
+        game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+            end
+        end)
+    end,
+ })
+ 
+ 
+ 
+ local MainTab = MainWindow:CreateTab("MM2 Scripts", 4483362458) -- Title, Image
+
+
+ local Button = MainTab:CreateButton({
+   Name = "Lunar Hub MM2 (key: lunarhubnicebye)",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/vwSaraa/LunarHub/main/mm2"))()
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "Murder Mystery 2 GUI by 1NO",
+   Callback = function()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/IamHrzn/Scourge/main/MainLoader.lua'))()
+   end,
+})
+
+local MainTab = MainWindow:CreateTab("Non FE Scripts", 4483362458) -- Title, Image
+
+
+local Button = MainTab:CreateButton({
+   Name = "c00lgui REAWAKENED Script (loadstring reworked)",
+   Callback = function()
+      loadstring(game:HttpGet('https://pastebin.com/raw/bV90GJGm'))()
+   end,
+})
+
+
+local Button = MainTab:CreateButton({
+   Name = "1x1x1x1 gui",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/CYye6uA4"))()
+   end,
+})
+
+
+local Button = MainTab:CreateButton({
+    Name = "Replication Gui",
+    Callback = function()
+       loadstring(game:HttpGet("https://pastebin.com/raw/vr2YVyF6"))()
+    end,
+ })
+
+
+ local MainTab = MainWindow:CreateTab("Bedwars Scripts", 4483362458) -- Title, Image
+
+
+ local Button = MainTab:CreateButton({
+    Name = "Vape V4",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+    end,
+ })
